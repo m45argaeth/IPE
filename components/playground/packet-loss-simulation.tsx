@@ -47,7 +47,7 @@ export function PacketLossSimulation({
               onClick={() => onToggle(true)}
               className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
                 isLossMode
-                  ? "bg-destructive text-destructive-foreground"
+                  ? "bg-red-600 text-white"
                   : "bg-muted text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -63,7 +63,7 @@ export function PacketLossSimulation({
             </div>
             {lostCount > 0 && (
               <div className="flex items-center gap-2">
-                <Badge variant="destructive">{lostCount}</Badge>
+                <Badge className="bg-red-600 text-white">{lostCount}</Badge>
                 <span className="text-sm text-muted-foreground">{t.packetLoss.lost}</span>
               </div>
             )}

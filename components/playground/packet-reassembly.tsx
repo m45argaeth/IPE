@@ -67,7 +67,7 @@ export function PacketReassembly({
               {isComplete ? (
                 <Badge className="bg-green-600">{t.packetReassembly.complete}</Badge>
               ) : (
-                <Badge variant="destructive">{t.packetReassembly.missing}</Badge>
+                <Badge variant="secondary" className="bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300">{t.packetReassembly.missing}</Badge>
               )}
             </div>
             <div className="rounded-lg bg-background p-3 text-center font-mono text-lg font-bold tracking-wider">
