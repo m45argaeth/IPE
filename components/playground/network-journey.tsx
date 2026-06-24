@@ -105,7 +105,7 @@ export function NetworkJourney({
                       : "bg-muted/20"
                 }`}
               >
-                <Badge variant={isLost ? "destructive" : "secondary"} className="shrink-0">
+                <Badge variant="secondary" className={`shrink-0 ${isLost ? "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300" : ""}`}>
                   #{pkt.seq}
                 </Badge>
                 <div className="flex-1">
